@@ -1,0 +1,266 @@
+/* Add Your Styles Here */
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+}
+
+/* ------------- Main Header ------------- */
+.main-header{
+    background: white url("../images/image5.jpeg") no-repeat scroll center;
+    padding: 12px;
+    color: white;
+    text-align: right;
+}
+
+/* ------------- Main Navbar ------------- */
+.main-nav{
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0 0 5px black;
+}
+.main-nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 10px 25px;
+    display: inline-block;
+}
+.main-nav a:hover{
+    background-color: #81463c;
+    border-radius: 50px;
+    box-shadow: 0 0 3px white;
+}
+.main-nav a.active{
+    background-color: darkred;
+    border-radius: 50px;
+    box-shadow: 0 0 3px white;
+}
+
+
+/* ------------- Home News Section  ------------- */
+.home-news-section{
+    margin-top: 10px;
+    text-align: center;
+}
+.home-news-article{
+    border: 2px solid darkred;
+    width: 330px;
+    height: 500px;
+    display: inline-grid;
+    margin: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.5s;
+}
+.home-news-article:hover{
+    width: 340px;
+    cursor: pointer;
+    box-shadow: 0 0 10px darkred;
+}
+.home-news-article h2{
+    color: darkred;
+}
+.home-news-article img{
+    width: 100%;
+}
+
+/* ------------- Main News Section  ------------- */
+.main-news-section{
+    width: 80%;
+    margin: auto;
+}
+.main-news-article{
+    box-shadow: 0 0 10px darkred;
+    border-radius: 10px;
+}
+.main-news-article h2{
+    background: linear-gradient(45deg,#81463c,black,#81463c);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.main-news-article p{
+    color: darkred;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px darkred;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    box-shadow: 0 0 10px darkred;
+    transition: all 0.5s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+}
+
+/* ------------- Main Footer  ------------- */
+.main-footer{
+    background: linear-gradient(45deg,#81463c,black,#81463c);
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+.main-footer a{
+    color: orchid;
+}
+
+/* ------------- Gallery Section  ------------- */
+.gallery-section{
+    text-align: center;
+    margin-top: 10px;
+}
+.gallery-figure{
+    border: 2px solid darkred;
+    width: 300px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.gallery-figure:hover{
+    box-shadow: 0 0 10px darkred;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+.gallery-figure figcaption{
+    padding: 10px;
+    color: darkred;
+}
+
+/* ------------- About Section  ------------- */
+.about-section{
+    width: 80%;
+    margin: auto;
+}
+.about-article{
+    background: white url("../images/gallery_mobile_3.jpg") no-repeat scroll top;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 0 10px blueviolet;
+}
+.company-images{
+    text-align: center;
+}
+.company-images img{
+    width: 250px;
+    height: 150px;
+    margin: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 0 5px blueviolet;
+}
+/* --------------- Contact Section ---------------- */
+.contact-section{
+    background: white url("../images/image5.jpeg") no-repeat scroll bottom;
+    padding: 15px;
+}
+.contact-article{
+    background-color: rgba(0,0,0,0.5);
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0 0 10px #ccb499;
+    border-radius: 10px;
+    padding: 15px;
+}
+.contact-article h2{
+    color: #ccb499;
+}
+.contact-form .inputField{
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 200px;
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 3px solid #5e5147;
+}
+.contact-form .inputField:focus{
+    border-bottom: 3px solid #ccb499;
+}
+::placeholder{
+    color:#ccb499 ;
+}
+
+.contact-form textarea{
+    border: 3px solid #5e5147;
+    outline: none;
+    background-color: transparent;
+    margin: 5px;
+    width: 180px;
+    border-radius: 5px;
+    color: white;
+}
+.contact-form textarea:focus{
+    border: 3px solid #ccb499;
+}
+.contact-form #submit-btn{
+    background-color: #5e5147;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+}
+.contact-form #submit-btn:hover{
+    box-shadow: 0 0 5px #ccb499;
+    cursor: pointer;
+}
+
+.page-not-found{
+    text-align: center;
+}
+.page-not-found h1{
+    color: red;
+    font-size: 40px;
+}
+.page-not-found p{
+    font-size: 18px;
+}
+/* ------------- Media Queries -------------------- */
+@media (max-width: 600px) {
+    .zoom{
+        width: 300px;
+        height: 200px;
+    }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+    .zoom{
+        width: 400px;
+        height: 250px;
+    }
+}
